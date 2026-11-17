@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="pt-PT" data-titulo-pt="Matriz · Mário Henrique Pinto" data-titulo-en="Matriz · Mário Henrique Pinto">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Matriz · Mário Henrique Pinto</title>
+  <meta name="description" content="Matriz: aplicação full-stack de gestão de projetos e tarefas (Java 21, Spring Boot 3, PostgreSQL, React, Docker), da especificação ao deploy.">
+  <meta property="og:title" content="Matriz · gestão de projetos e tarefas">
+  <meta property="og:description" content="Aplicação full-stack feita de raiz: Java 21, Spring Boot 3, PostgreSQL, React, Docker, CI e deploy no Render.">
+  <meta property="og:image" content="https://mariohenriquep.github.io/assets/img/og-matriz.jpg">
+  <meta property="og:url" content="https://mariohenriquep.github.io/projetos/matriz.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/estilo.css">
+  <script src="../assets/idioma.js"></script>
+</head>
+<body>
+  <div class="pagina">
+    <header class="topo mono">
+      <a href="../">← Mário Henrique Pinto</a>
+      <div class="idioma" role="group" aria-label="Idioma / Language">
+        <button type="button" data-idioma="pt" aria-pressed="true">pt</button>
+        <button type="button" data-idioma="en" aria-pressed="false">en</button>
+      </div>
+    </header>
+
+    <main>
+      <div class="abertura linha">
+        <p class="mono" style="margin:0 0 16px"><span class="pt">Projeto 01</span><span class="en">Project 01</span></p>
+        <h1>Matriz. <em class="pt">Os projetos de uma equipa num só quadro.</em><em class="en">A team's projects on a single board.</em></h1>
+        <dl class="ficha">
+          <dt><span class="pt">o quê</span><span class="en">what</span></dt>
+          <dd class="pt">Gestão de projetos e tarefas para equipas</dd><dd class="en">Project and task management for teams</dd>
+          <dt><span class="pt">quando</span><span class="en">when</span></dt><dd>2026 · v0.8.0</dd>
+          <dt><span class="pt">papel</span><span class="en">role</span></dt>
+          <dd class="pt">Tudo: especificação, arquitetura, backend, frontend, testes e deploy</dd><dd class="en">Everything: specification, architecture, backend, frontend, testing and deployment</dd>
+          <dt>stack</dt><dd>Java 21, Spring Boot 3.5, PostgreSQL 16, React 19, TypeScript, Docker, GitHub Actions</dd>
+          <dt>links</dt>
+          <dd><a href="https://matriz-frontend-650f.onrender.com" target="_blank" rel="noopener"><span class="pt">app no ar</span><span class="en">live app</span></a> · <a href="https://github.com/mariohenriquep/matriz-api" target="_blank" rel="noopener"><span class="pt">código</span><span class="en">code</span></a></dd>
+        </dl>
+        <aside class="nota">
+          <span class="pt">Alojada no plano gratuito do Render: o primeiro acesso pode demorar cerca de um minuto enquanto o servidor acorda.</span>
+          <span class="en">Hosted on Render's free tier: the first visit may take about a minute while the server wakes up.</span>
+        </aside>
+      </div>
+
+      <section class="linha">
+        <h2><span class="n">01</span><span class="pt">Ecrãs</span><span class="en">Screens</span></h2>
+        <figure class="figura">
+          <img src="../assets/img/matriz-quadro-geral.webp" alt="Quadro geral" width="1600" height="1011">
+          <figcaption class="mono"><span class="pt">Quadro geral: todas as tarefas de todos os projetos, com filtros.</span><span class="en">Overview board: every task across projects, with filters.</span></figcaption>
+        </figure>
+        <figure class="figura">
+          <img src="../assets/img/matriz-quadro.webp" alt="Quadro Kanban de um projeto" width="1440" height="967" loading="lazy">
+          <figcaption class="mono"><span class="pt">Kanban de um projeto: arrastar uma tarefa muda o estado, também com teclado e no telemóvel.</span><span class="en">A project's Kanban board: dragging a task changes its status, also by keyboard and on mobile.</span></figcaption>
+        </figure>
+        <figure class="figura">
+          <img src="../assets/img/matriz-inicio-topo.webp" alt="Página inicial pública" width="1600" height="900" loading="lazy">
+          <figcaption class="mono"><span class="pt">Página inicial pública, com registo gratuito.</span><span class="en">Public landing page with free sign-up.</span></figcaption>
+        </figure>
+      </section>
+
+      <section class="linha">
+        <h2><span class="n">02</span><span class="pt">O que faz</span><span class="en">What it does</span></h2>
+        <ol class="lista-num pt">
+          <li><div><b>Projetos e equipas.</b> <span>Quem cria um projeto fica Gestor e adiciona membros pelo email; projetos terminados vão para um arquivo só de leitura.</span></div></li>
+          <li><div><b>Tarefas.</b> <span>Prioridade, prazo, estado, vários responsáveis e comentários; as atrasadas ficam assinaladas.</span></div></li>
+          <li><div><b>Kanban.</b> <span>Quadro por projeto e quadro geral, com filtros guardados no endereço da página.</span></div></li>
+          <li><div><b>Acesso seguro.</b> <span>JWT, bcrypt, bloqueio após tentativas falhadas, limites de pedidos e um registo que não revela que emails existem.</span></div></li>
+        </ol>
+        <ol class="lista-num en">
+          <li><div><b>Projects and teams.</b> <span>Whoever creates a project becomes its Manager and adds members by email; finished projects move to a read-only archive.</span></div></li>
+          <li><div><b>Tasks.</b> <span>Priority, deadline, status, multiple assignees and comments; overdue tasks are flagged.</span></div></li>
+          <li><div><b>Kanban.</b> <span>Per-project board and an overview board, with filters kept in the page URL.</span></div></li>
+          <li><div><b>Secure access.</b> <span>JWT, bcrypt, lockout after failed attempts, rate limiting and a sign-up flow that doesn't reveal which emails exist.</span></div></li>
+        </ol>
+      </section>
+
+      <section class="linha">
+        <h2><span class="n">03</span><span class="pt">Como foi feita</span><span class="en">How it was built</span></h2>
+        <p class="pt" style="margin-top:0">Em cinco fases, na unidade curricular <em>AI-Powered Software Engineering</em>, cada uma revista antes de avançar.</p>
+        <p class="en" style="margin-top:0">In five phases, for the <em>AI-Powered Software Engineering</em> course, each reviewed before moving on.</p>
+        <ol class="lista-num pt">
+          <li><div><b>Especificação.</b> <span>Requisitos, user stories com critérios de aceitação e restrições.</span></div></li>
+          <li><div><b>Arquitetura.</b> <span>Monólito modular, modelo de dados e contrato REST em OpenAPI 3.1.</span></div></li>
+          <li><div><b>Implementação.</b> <span>Spring Boot em clean architecture (verificada com ArchUnit) e React.</span></div></li>
+          <li><div><b>Testes e revisões.</b> <span>Testcontainers, Playwright, code review e security review.</span></div></li>
+          <li><div><b>Entrega.</b> <span>Docker, GitHub Actions com Trivy e SonarQube Cloud, versões com tags e deploy no Render.</span></div></li>
+        </ol>
+        <ol class="lista-num en">
+          <li><div><b>Specification.</b> <span>Requirements, user stories with acceptance criteria, and constraints.</span></div></li>
+          <li><div><b>Architecture.</b> <span>Modular monolith, data model and a REST contract in OpenAPI 3.1.</span></div></li>
+          <li><div><b>Implementation.</b> <span>Spring Boot in clean architecture (enforced with ArchUnit) and React.</span></div></li>
+          <li><div><b>Testing and reviews.</b> <span>Testcontainers, Playwright, code and security reviews.</span></div></li>
+          <li><div><b>Delivery.</b> <span>Docker, GitHub Actions with Trivy and SonarQube Cloud, tagged releases and deployment on Render.</span></div></li>
+        </ol>
+        <aside class="nota">
+          <b><span class="pt">IA com revisão humana.</span><span class="en">AI with human review.</span></b><br>
+          <span class="pt">Usei IA em todas as fases, como copiloto: prompts estruturados, registo do uso e revisão humana de cada decisão, código e teste.</span>
+          <span class="en">I used AI as a copilot in every phase: structured prompts, a usage log and human review of every decision, piece of code and test.</span>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="mono">
+      <p><a href="../">← <span class="pt">Voltar</span><span class="en">Back</span></a></p>
+      <p>© 2026 Mário Henrique Pinto</p>
+    </footer>
+  </div>
+</body>
+</html>
