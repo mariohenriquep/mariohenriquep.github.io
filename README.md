@@ -10,7 +10,7 @@ Site estático em HTML e CSS, sem build: o que está no repositório é o que va
 |---------|----------|
 | `index.html` | Página inicial: apresentação, projetos, competências, sobre e contacto. |
 | `projetos/` | Uma página por projeto (`matriz.html`). |
-| `assets/estilo.css` | Estilos de todas as páginas (tema claro e escuro automático). |
+| `assets/estilo.css` | Estilos de todas as páginas: visual minimalista, notas na margem, tema claro e escuro automático. |
 | `assets/idioma.js` | Seletor PT/EN. A escolha fica guardada no browser; por omissão segue o idioma do browser. `?lang=en` força o inglês. |
 | `assets/img/` | Imagens (capturas em WebP e a imagem de pré-visualização para redes sociais). |
 
@@ -24,9 +24,11 @@ Cada texto aparece duas vezes, com a classe `pt` e com a classe `en`; o CSS most
 
 ## Acrescentar um projeto
 
-1. Pôr as capturas em `assets/img/` (de preferência WebP, até 1600 px de largura).
-2. Em `index.html`, copiar o bloco `<article class="projeto">` da Matriz e trocar textos, imagem e links.
-3. Duplicar `projetos/matriz.html` para `projetos/<nome>.html` e adaptar.
+1. Pôr a captura em `assets/img/` (de preferência WebP, até 1600 px de largura).
+2. Em `index.html`, na lista `<ul class="trabalho">`, copiar um `<li>` e trocar número, textos (`.pt` e `.en`), links e `data-imagem` (a captura que segue o rato).
+3. Para uma página de detalhe, duplicar `projetos/matriz.html` para `projetos/<nome>.html` e adaptar.
+
+As pastas `previa/` e `previa-2/` são pré-visualizações de visuais alternativos (não indexadas).
 
 ## Ver localmente
 
