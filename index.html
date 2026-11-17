@@ -12,7 +12,7 @@
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="assets/favicon.svg?v=3" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/estilo.css?v=4">
+  <link rel="stylesheet" href="assets/estilo.css?v=5">
   <script src="assets/idioma.js"></script>
 </head>
 <body>
@@ -27,7 +27,7 @@
 
     <main>
       <div class="inicio">
-        <p class="mono sobretitulo">Software Developer · Portugal<span id="hora"></span></p>
+        <p class="mono sobretitulo">Software Developer · Portugal</p>
         <h1 class="nome-grande">Mário Henrique <em>Pinto</em></h1>
         <p class="frase">
           <span class="pt">Fui treinador e gestor desportivo durante nove anos. Hoje construo software, <em>do primeiro requisito ao deploy.</em></span>
@@ -162,17 +162,6 @@
   <img class="espreitar" alt="" aria-hidden="true">
 
   <script>
-    // Hora local em Portugal, ao lado do estado
-    (function () {
-      var el = document.getElementById("hora");
-      function atualizar() {
-        try {
-          el.textContent = ", " + new Intl.DateTimeFormat("pt-PT", { hour: "2-digit", minute: "2-digit", timeZone: "Europe/Lisbon" }).format(new Date());
-        } catch (e) { el.textContent = ""; }
-      }
-      atualizar(); setInterval(atualizar, 30000);
-    })();
-
     // Espreitar: a captura do projeto segue o rato
     (function () {
       var img = document.querySelector(".espreitar");
