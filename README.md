@@ -28,7 +28,6 @@ Cada texto aparece duas vezes, com a classe `pt` e com a classe `en`; o CSS most
 2. Em `index.html`, na lista `<ul class="trabalho">`, copiar um `<li>` e trocar número, textos (`.pt` e `.en`), links e `data-imagem` (a captura que segue o rato).
 3. Para uma página de detalhe, duplicar `projetos/matriz.html` para `projetos/<nome>.html` e adaptar.
 
-As pastas `previa/` e `previa-2/` são pré-visualizações de visuais alternativos (não indexadas).
 
 ## Ver localmente
 
