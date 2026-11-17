@@ -12,7 +12,7 @@
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="assets/favicon.svg?v=3" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/estilo.css?v=3">
+  <link rel="stylesheet" href="assets/estilo.css?v=4">
   <script src="assets/idioma.js"></script>
 </head>
 <body>
@@ -26,21 +26,33 @@
     </header>
 
     <main>
-      <div class="abertura linha">
-        <h1>
+      <div class="inicio">
+        <p class="mono sobretitulo">Software Developer · Portugal<span id="hora"></span></p>
+        <h1 class="nome-grande">Mário Henrique <em>Pinto</em></h1>
+        <p class="frase">
           <span class="pt">Fui treinador e gestor desportivo durante nove anos. Hoje construo software, <em>do primeiro requisito ao deploy.</em></span>
           <span class="en">For nine years I was a coach and sports manager. Today I build software, <em>from the first requirement to deployment.</em></span>
-        </h1>
-        <div class="estado mono">
-          <span><span class="ponto"></span><span class="pt">A construir a <a href="https://github.com/mariohenriquep/regi-volley" target="_blank" rel="noopener">RegiVolley</a></span><span class="en">Building <a href="https://github.com/mariohenriquep/regi-volley" target="_blank" rel="noopener">RegiVolley</a></span></span>
-          <span>Portugal<span id="hora"></span></span>
-          <span>Software Developer</span>
+        </p>
+        <div class="arco" aria-hidden="true">
+          <svg viewBox="0 0 1000 230">
+            <line class="chao" x1="0" y1="200" x2="1000" y2="200"/>
+            <path id="trajetoria" class="traj" d="M40 200 Q500 -70 960 200"/>
+            <circle class="marca" cx="40" cy="200" r="5"/>
+            <circle class="marca" cx="500" cy="65" r="5"/>
+            <circle class="bola" r="8" style="opacity:0">
+              <animateMotion dur="2.4s" fill="freeze" begin="indefinite" id="servico" calcMode="spline" keyTimes="0;1" keySplines=".35 0 .25 1">
+                <mpath href="#trajetoria"/>
+              </animateMotion>
+            </circle>
+            <text class="forte" x="40" y="228"><tspan class="pt">Desporto</tspan><tspan class="en">Sport</tspan></text>
+            <text class="forte" x="500" y="42" text-anchor="middle">SWitCH Dev</text>
+            <text class="forte" x="960" y="228" text-anchor="end"><tspan class="pt">Código</tspan><tspan class="en">Code</tspan></text>
+          </svg>
         </div>
-        <aside class="nota">
-          <b>Mário Henrique Pinto</b><br>
-          <span class="pt">Software Developer. Antes, 9 anos no desporto. Reconversão pelo SWitCH Dev, no ISEP.</span>
-          <span class="en">Software developer. Before that, 9 years in sport. Career change through SWitCH Dev at ISEP.</span>
-        </aside>
+        <div class="rodape-abertura mono">
+          <span><span class="ponto"></span><span class="pt">A construir a <a href="https://github.com/mariohenriquep/regi-volley" target="_blank" rel="noopener">RegiVolley</a></span><span class="en">Building <a href="https://github.com/mariohenriquep/regi-volley" target="_blank" rel="noopener">RegiVolley</a></span></span>
+          <a href="#trabalho" class="descer"><span class="pt">Ver projetos ↓</span><span class="en">See projects ↓</span></a>
+        </div>
       </div>
 
       <section id="trabalho" class="linha">
@@ -87,24 +99,6 @@
 
       <section id="percurso" class="linha">
         <h2><span class="n">02</span><span class="pt">Percurso</span><span class="en">Path</span></h2>
-        <div class="arco" aria-hidden="true">
-          <svg viewBox="0 0 640 256">
-            <line class="chao" x1="0" y1="200" x2="640" y2="200"/>
-            <path id="trajetoria" class="traj" d="M30 200 Q320 -70 610 200"/>
-            <circle class="marca" cx="30" cy="200" r="5"/>
-            <circle class="marca" cx="320" cy="65" r="5"/>
-            <circle class="bola" r="7" style="opacity:0">
-              <animateMotion dur="2.4s" fill="freeze" begin="indefinite" id="servico" calcMode="spline" keyTimes="0;1" keySplines=".35 0 .25 1">
-                <mpath href="#trajetoria"/>
-              </animateMotion>
-            </circle>
-            <text class="forte" x="30" y="226"><tspan class="pt">Desporto</tspan><tspan class="en">Sport</tspan></text>
-            <text x="30" y="250"><tspan class="pt">9 anos</tspan><tspan class="en">9 years</tspan></text>
-            <text class="forte" x="320" y="40" text-anchor="middle">SWitCH Dev</text>
-            <text class="forte" x="610" y="226" text-anchor="end"><tspan class="pt">Código</tspan><tspan class="en">Code</tspan></text>
-            <text x="610" y="250" text-anchor="end"><tspan class="pt">agora</tspan><tspan class="en">now</tspan></text>
-          </svg>
-        </div>
         <div class="etapas">
           <p class="pt"><b>Desporto</b>Nove anos como gestor desportivo e treinador: equipas, planeamento e pessoas.</p>
           <p class="en"><b>Sport</b>Nine years as a sports manager and coach: teams, planning and people.</p>
@@ -114,8 +108,8 @@
           <p class="en"><b>Code</b>From idea to implementation.</p>
         </div>
         <aside class="nota">
-          <span class="pt">O arco é a trajetória de um serviço de voleibol: sai do desporto e cai no código.</span>
-          <span class="en">The arc is the path of a volleyball serve: it leaves sport and lands in code.</span>
+          <span class="pt">O arco lá em cima é a trajetória de um serviço de voleibol: sai do desporto e cai no código.</span>
+          <span class="en">The arc up top is the path of a volleyball serve: it leaves sport and lands in code.</span>
         </aside>
       </section>
 
@@ -195,11 +189,11 @@
       var bola = document.querySelector(".arco .bola");
       var semMovimento = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
       if (semMovimento || !("IntersectionObserver" in window) || !anim.beginElement) {
-        bola.setAttribute("cx", "610"); bola.setAttribute("cy", "200"); bola.style.opacity = 1; return;
+        bola.setAttribute("cx", "960"); bola.setAttribute("cy", "200"); bola.style.opacity = 1; return;
       }
       var obs = new IntersectionObserver(function (entradas) {
         if (entradas[0].isIntersecting) { bola.style.opacity = 1; anim.beginElement(); obs.disconnect(); }
-      }, { threshold: 0.5 });
+      }, { threshold: 0.3 });
       obs.observe(document.querySelector(".arco"));
     })();
   </script>

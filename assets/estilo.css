@@ -147,3 +147,22 @@ footer p { margin: 0 0 6px; }
 .caixa { border: 1px solid var(--linha); border-radius: 4px; padding: 16px 18px; }
 .caixa .cat { display: block; font: 500 12px var(--mono); color: var(--cinza); margin-bottom: 8px; }
 .caixa p { margin: 0; font-size: 17px; line-height: 1.45; }
+
+/* Abertura em ecrã inteiro: nome, frase e o arco do serviço */
+.inicio { min-height: calc(100svh - 82px); display: flex; flex-direction: column; justify-content: center; padding: 6vh 0 4vh; }
+.inicio .sobretitulo { margin: 0 0 20px; }
+.nome-grande {
+  font-weight: 300; font-size: clamp(54px, 10.5vw, 136px); line-height: .95; letter-spacing: -.035em; margin: 0 0 28px;
+  font-variation-settings: "opsz" 72;
+}
+.nome-grande em { font-style: italic; font-weight: 300; }
+.inicio .frase { font-size: clamp(20px, 2.2vw, 26px); line-height: 1.4; color: var(--cinza); max-width: 720px; margin: 0 0 4vh; font-weight: 300; }
+.inicio .frase em { color: var(--tinta); }
+.inicio .arco { margin: 0 0 18px; }
+.inicio .arco .traj { stroke-width: 1.4; }
+.inicio .arco text.forte { font-size: 20px; }
+.rodape-abertura { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.rodape-abertura .ponto { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--sinal); margin-right: 8px; vertical-align: 1px; animation: pulsar 2.4s ease-in-out infinite; }
+.descer { text-decoration: none; }
+@media (max-width: 640px) { .inicio .arco text.forte { font-size: 34px; } .inicio { min-height: auto; padding-top: 8vh; } }
+@media (prefers-reduced-motion: reduce) { .rodape-abertura .ponto { animation: none; } }
